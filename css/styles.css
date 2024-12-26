@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles for Dark Mode */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #121212; /* Dark background for the entire page */
+  color: #e0e0e0; /* Light text color for readability */
+}
+
+/* Header Styles */
+header {
+  padding: 20px;
+  background-color: #1f1f1f; /* Dark background for the header */
+}
+
+header h1 {
+  font-size: 2em;
+  color: #1DA1F2; /* Accent blue for the header text */
+}
+
+.profile-photo {
+  width: 150px;  /* Width of the profile picture */
+  height: 150px; /* Height of the profile picture */
+  border-radius: 50%; /* Circular shape */
+  object-fit: cover; /* Ensures the image fills the circular container */
+  border: 2px solid #1DA1F2; /* Blue border around the image */
+  margin: 20px auto; /* Centers the image */
+  display: block; /* Ensures it's a block-level element */
+}
+
+/* About Section */
+#about {
+  background-color: #1e1e1e; /* Dark background for About section */
+  color: #fff; /* White text */
+  padding: 20px;
+}
+
+#about h2 {
+  font-size: 1.8em;
+  color: #1DA1F2; /* Accent blue for the section title */
+}
+
+#about p {
+  color: #ccc; /* Light gray text for the paragraph */
+}
+
+/* Project Section */
+#projects {
+  padding: 20px;
+  background-color: #2a2a2a; /* Darker gray background for projects */
+}
+
+.project {
+  margin-bottom: 20px; /* Add space between each project */
+  text-align: center;  /* Center the project content */
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;  /* Set a fixed width for the images */
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image is cropped correctly */
+  border-radius: 10px; /* Rounded corners for project images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for image scaling */
+  margin-bottom: 10px; /* Space between image and description */
+}
+
+.project img:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.project a {
+  color: #1DA1F2; /* Accent blue for GitHub links */
+  text-decoration: none;
+}
+
+.project a:hover {
+  color: #ccc; /* Light gray on hover */
+}
+
+/* Contact Section */
+#contact {
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background for contact form */
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333; /* Slightly lighter background for the form */
+  border-radius: 10px;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #444; /* Light gray border for form fields */
+  border-radius: 5px;
+}
+
+input, textarea {
+  background-color: #222; /* Dark background for form fields */
+  color: #fff; /* White text for form fields */
+}
+
+button {
+  background-color: #1DA1F2; /* Accent blue for the button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007bb5; /* Darker blue on button hover */
+}
+
+/* Footer Styles */
+footer {
+  padding: 10px;
+  background-color: #1f1f1f; /* Dark footer background */
+  color: white;
+  text-align: center;
+}
